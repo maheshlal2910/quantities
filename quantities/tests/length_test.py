@@ -13,3 +13,6 @@ class FromMillimetersTest(TestCase):
 
     def test_should_convert_from_100_millimeters_given_conversion_factor_of_10(self):
         assert from_millimeters(100, 10.0) == 10.0
+
+    def test_should_convert_from_100_millimeters_given_conversion_factor_of_1000(self):
+        assert from_millimeters(100, 1000.0) == 0.1
